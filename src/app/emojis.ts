@@ -1,0 +1,58 @@
+export const emojis = {
+  smiles: [
+    { name: "laugh", symbol: "😁" },
+    { name: "tearjOfJoy", symbol: "😂" },
+    { name: "smile", symbol: "😃" },
+    { name: "happy", symbol: "😄" },
+    { name: "wink", symbol: "😉" },
+    { name: "smileCloseEyes", symbol: "😊" },
+    { name: "smileDeliciousFood", symbol: "😋" },
+    { name: "relieved", symbol: "😌" },
+    { name: "heartShapedEyes", symbol: "😍" },
+    { name: "smirking", symbol: "😏" },
+    { name: "unamused", symbol: "😒" },
+    { name: "coldSweat", symbol: "😓" }
+  ],
+  people:[
+    { name: "boy", symbol: "👦" },
+    { name: "girl", symbol: "👧" },
+    { name: "man", symbol: "👨" },
+    { name: "woman", symbol: "👩" },
+    { name: "family", symbol: "👪" },
+    { name: "couple", symbol: "👫" },
+    { name: "police", symbol: "👮" },
+    { name: "bunyEars", symbol: "👯" },
+    { name: "blondHair", symbol: "👱" },
+    { name: "oldMan", symbol: "👴" },
+    { name: "oldWoman", symbol: "👵" },
+    { name: "baby", symbol: "👶" },
+  ],
+  symbols: [
+    { name: "scissors", symbol: "✂" },
+    { name: "heavyPlus", symbol: "➕" },
+    { name: "heavyQuestion", symbol: "❓" },
+    { name: "heavyExclamation", symbol: "❗" },
+    { name: "copyright", symbol: "©" },
+    { name: "registered", symbol: "®" },
+    { name: "tradeMark", symbol: "™" },
+    { name: "biceps", symbol: "💪" },
+    { name: "poo", symbol: "💩" },
+    { name: "heart", symbol: "💙" },
+    { name: "ring", symbol: "💍" },
+    { name: "skull", symbol: "💀" }
+  ],
+  nature: [
+    { name: "earth", symbol: "🌍" },
+    { name: "sun", symbol: "🌞" },
+    { name: "moon", symbol: "🌜" },
+    { name: "pine", symbol: "🌲" },
+    { name: "tree", symbol: "🌳" },
+    { name: "cow", symbol: "🐄" },
+    { name: "rabbit", symbol: "🐇" },
+    { name: "crocodile", symbol: "🐊" },
+    { name: "hen", symbol: "🐓" },
+    { name: "dog", symbol: "🐕" },
+    { name: "pig", symbol: "🐖" },
+    { name: "camel", symbol: "🐪" }
+  ]
+};
