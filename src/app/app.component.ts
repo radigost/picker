@@ -1,29 +1,34 @@
-import { Component } from "@angular/core";
-import { NgModel } from "@angular/forms";
-import {emojis} from './emojis'
+import {Component, OnInit} from '@angular/core';
+import {StateService} from './state.service';
 
 
 @Component({
-  selector: "app-root",
-  templateUrl: "./app.component.html",
-  styleUrls: ["./app.component.css"]
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
 })
-export class AppComponent {
-  title = "app";
-  messages = [];
-  message = "";
-  emojis = emojis;
-  showEmojiPicker=false;
+export class AppComponent implements OnInit {
+  messages;
+  message = '';
+
+  constructor(public stateService: StateService) {
+
+  }
+
+  ngOnInit() {
+    this.messages = this.stateService.getMessages();
+  }
+
+  onKey(event) {
+    this.message = event.target.value;
+  }
 
   submit(message) {
-    this.messages.push(message);
+    this.stateService.submit(message);
     this.message = '';
   }
+
   pick(emoji) {
-    this.message = `${this.message} ${emoji.symbol}`;
-    this.showEmojiPicker=false;
-  }
-  triggerEmojiPicker(){
-    this.showEmojiPicker=!this.showEmojiPicker;
+    this.message = `${this.message} ${emoji.symbol} `;
   }
 }

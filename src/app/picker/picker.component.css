@@ -1,0 +1,38 @@
+.picker__button {
+  height: 100%;
+  width: 100%;
+}
+
+.emoji-picker__inner {
+  position: absolute;
+  bottom: 10em;
+  right: 0em;
+  background-color: rgb(255, 247, 238);
+  max-width: 90vw;
+  width: 25em;
+  height: 20em;
+  margin: 1em;
+  overflow-y: scroll;
+  padding: 1em;
+  border-radius: 3px;
+}
+
+.emoji-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.emoji-btn-group {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.emoji-btn-group button {
+  width: 2em;
+  height: 2em;
+  border: none;
+  margin: 0.2em;
+  font-size: large;
+  background: unset;
+}

@@ -2,40 +2,13 @@
 <div class="test test__inner">
   <div class="message-container">
     <div class="messages">
-        <div *ngFor="let message of messages">{{message}}</div>
+      <div *ngFor="let message of messages">{{message}}</div>
     </div>
-    
-    <div class="emoji-picker emoji-picker__inner" [hidden]="!showEmojiPicker">
-        <div class="emoji-group">
-          <h3>Смайлы</h3>
-          <div class="emoji-btn-group">
-              <button (click)="pick(emoji)" *ngFor="let emoji of emojis.smiles">{{emoji.symbol}}</button>
-          </div>
-        </div>
-        <div class="emoji-group">
-            <h3>Люди</h3>
-            <div class="emoji-btn-group">
-                <button (click)="pick(emoji)" *ngFor="let emoji of emojis.people">{{emoji.symbol}}</button>
-            </div>
-          </div>
-        <div class="emoji-group">
-            <h3>Природа</h3>
-            <div class="emoji-btn-group">
-                <button (click)="pick(emoji)" *ngFor="let emoji of emojis.nature">{{emoji.symbol}}</button>
-            </div>
-        </div>
-        <div class="emoji-group">
-            <h3>Символы</h3>
-            <div class="emoji-btn-group">
-                <button (click)="pick(emoji)" *ngFor="let emoji of emojis.symbols">{{emoji.symbol}}</button>
-            </div>
-        </div>
-    </div>
-      
+
     <div class="input-form">
-        <input type="text" [(ngModel)]="message" #ctrl="ngModel">
-        <button class="input-form__button" (click)="submit(message)">&#9654;</button>
-        <button class="input-form__button" (click)="triggerEmojiPicker()">😁</button>
+      <input type="text" [(ngModel)]="message">
+      <button class="input-form__button" (click)="submit(message)">&#9654;</button>
+      <app-picker [emojis]="stateService.emojis" (onPicked)="pick($event)"></app-picker>
     </div>
   </div>
 </div>
