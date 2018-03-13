@@ -1,42 +1,43 @@
-.test__inner{
-    display: flex;
-    flex-direction: row-reverse;
+.test__inner {
+  display: flex;
+  flex-direction: row-reverse;
 }
 
-.message-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    height: 90vh;
+.message-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 90vh;
   max-width: 90vw;
 }
-.messages{
-    width: 30em;
-    flex-basis: 90%;
-    background-color: bisque;
-    border-radius: 6px;
+
+.messages {
+  width: 30em;
+  flex-basis: 90%;
+  background-color: bisque;
+  border-radius: 6px;
 }
 
 /*input*/
 
-.input-form{
-    height: 1em;
-    flex-basis: 3em;
-    display:flex;
-    justify-content: space-around;
-    align-content: stretch;
+.input-form {
+  height: 1em;
+  flex-basis: 3em;
+  display: flex;
+  justify-content: space-around;
+  align-content: stretch;
 }
 
-.input-form__button{
-    flex-basis: 10%;
-}
-
-.input-form app-picker{
+.input-form__button {
   flex-basis: 10%;
 }
 
-.input-form input{
-    /* height: 2em; */
-    flex-basis: 75%;
-    padding: 0.2em 1em;
+.input-form app-picker {
+  flex-basis: 10%;
+}
+
+.input-form input {
+  /* height: 2em; */
+  flex-basis: 75%;
+  padding: 0.2em 1em;
 }

@@ -1,23 +1,14 @@
-import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
-import {StateService} from '../state.service';
+import {Component, EventEmitter, Input, Output} from '@angular/core';
 
 @Component({
   selector: 'app-picker',
   templateUrl: './picker.component.html',
   styleUrls: ['./picker.component.css']
 })
-export class PickerComponent implements OnInit {
+export class PickerComponent {
   showEmojiPicker = false;
   @Input() emojis;
   @Output() onPicked = new EventEmitter();
-
-
-  constructor() {
-  }
-
-  ngOnInit() {
-  }
-
 
   triggerEmojiPicker() {
     this.showEmojiPicker = !this.showEmojiPicker;

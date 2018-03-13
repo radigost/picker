@@ -12,15 +12,10 @@ export class AppComponent implements OnInit {
   message = '';
 
   constructor(public stateService: StateService) {
-
   }
 
   ngOnInit() {
     this.messages = this.stateService.getMessages();
-  }
-
-  onKey(event) {
-    this.message = event.target.value;
   }
 
   submit(message) {
